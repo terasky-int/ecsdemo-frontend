@@ -1,0 +1,13 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: ecsdemo-frontend 
+  labels:
+    apps.tanzu.vmware.com/workload-type: argo-gitops-supply-chain
+spec:
+  
+  source:
+    git:
+      ref:
+        branch: main  
+      url: https://github.com/terasky-int/ecsdemo-frontend.git  
